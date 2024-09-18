@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Sizing Exercise</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    .grid-container1 {
+        width: 80%;
+        background-color: #dddddd;
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: auto 400px minmax(200px, 500px);
+        padding: 20px;
+        margin: 30px
+    }
+
+    .grid-item1 {
+        color: white;
+        font-size: 18px;
+        background-color: seagreen;
+        border: 2px solid white;
+        padding: 20px;
+    }
+
+    .grid-container2 {
+        width: 80%;
+        background-color: #dddddd;
+        display: grid;
+        grid-template: auto;
+        padding: 20px;
+        margin: 30px
+    }
+
+    .grid-item2 {
+        color: white;
+        font-size: 18px;
+        background-color: #9400d3;
+        border: 2px solid #daa520;
+        padding: 20px;
+    }
+    textarea {
+      width: 80%;
+      min-height: 150px;
+      margin-top: 20px; 
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4285f4;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+</style>
+
+<body>
+    <h1>CSS Grid Sizing Exercise</h1>
+    <div class="grid-container1">
+        <div class="grid-item1">width expands to fill space</div>
+        <div class="grid-item1">400px wide</div>
+        <div class="grid-item1">min 200px max 500px wide</div>
+        <div class="grid-item1">width expands to fill space</div>
+        <div class="grid-item1">400px wide</div>
+        <div class="grid-item1">min 200px max 500px wide</div>
+        <div class="grid-item1">width expands to fill space</div>
+        <div class="grid-item1">400px wide</div>
+        <div class="grid-item1">min 200px max 500px wide</div>
+        <div class="grid-item1">50px high</div>
+    </div>
+    <div class="grid-container2">
+        <div class="grid-item2">width expands to fill space</div>
+        <div class="grid-item2">400px wide</div>
+        <div class="grid-item2">min 200px max 500px wide</div>
+        <div class="grid-item2">width expands to fill space</div>
+        <div class="grid-item2">400px wide</div>
+        <div class="grid-item2">min 200px max 500px wide</div>
+        <div class="grid-item2">width expands to fill space</div>
+        <div class="grid-item2">400px wide</div>
+        <div class="grid-item2">min 200px max 500px wide</div>
+        <div class="grid-item2">50px high</div>
+    </div>
+    <textarea id="user-css"  placeholder="Write your CSS code here..." rows="25">
+        /* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
+        
+        .grid-container {
+         
+        }
+        </textarea>
+        <button>Apply CSS</button>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/* Write your code here: */
+h1,h2{
+    color: blueviolet;
+}
+
+
+#others{
+    font-size: 8px;
+}
+
+.box >p{
+    color: brown;
+}
+
+.box li{
+    color: blue;
+}
+
+li.things{
+    color: green;
+}
+
+ul p{
+    font-size: 8px;
+}
